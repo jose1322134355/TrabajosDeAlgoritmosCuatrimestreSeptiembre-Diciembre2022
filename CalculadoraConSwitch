@@ -1,0 +1,65 @@
+import java.util.Scanner;
+public class CalculadoraConSwitch {
+    
+    public static void main(String[] args) {
+        Scanner menu = new Scanner(System.in);
+        System.out.println("¿Que operacion quieres hacer?");
+        System.out.println("\n1.- Suma \n2.- Resta \n3.- Multiplicacion \n4.- Division");
+        int operacion = menu.nextInt();
+        
+        switch(operacion) {
+            case 1:
+                
+                    Scanner n1 = new Scanner(System.in);
+                    System.out.println("Ingresa el primer numero");
+                    int n1suma = n1.nextInt();
+                    Scanner n2 = new Scanner(System.in);
+                    System.out.println("Ingresa el segundo numero");
+                    int n2suma = n2.nextInt();
+                				int resultado = n1suma + n2suma;
+                				System.out.println("Tu resultado es:" + resultado);
+                    
+                break; 
+            
+            case 2:
+                
+                    Scanner n3 = new Scanner(System.in);
+                    System.out.println("Ingresa el primer numero");
+                    int n3resta = n3.nextInt();
+                    Scanner n4 = new Scanner(System.in);
+                    System.out.println("Ingresa el segundo numero");
+                    int n4resta= n4.nextInt();
+                				int resultador = n3resta - n4resta;
+                				System.out.println("Tu resultado es:" + resultador);
+                    
+                break; 
+            
+            case 3: 
+                
+                    Scanner n5 = new Scanner(System.in);
+                    System.out.println("Ingresa el primer numero");
+                    int n5multiplicacion = n5.nextInt();
+                    Scanner n6 = new Scanner(System.in);
+                    System.out.println("Ingresa el segundo numero");
+                    int n6multiplicacion= n6.nextInt();
+                				int resultadox = n5multiplicacion * n6multiplicacion;
+                				System.out.println("Tu resultado es:" + resultadox);
+                    
+                break;
+            
+            case 4:
+                
+                    Scanner n7 = new Scanner(System.in);
+                    System.out.println("Ingresa el primer numero");
+                    int n7division = n7.nextInt();
+                    Scanner n8 = new Scanner(System.in);
+                    System.out.println("Ingresa el segundo numero");
+                    int n8division = n8.nextInt();
+                				int resultadon = n7division / n8division;
+                				System.out.println("Tu resultado es:" + resultadon);
+                    
+                break;
+        }
+    }
+    
+}
