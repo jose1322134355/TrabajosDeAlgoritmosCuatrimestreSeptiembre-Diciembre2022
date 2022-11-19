@@ -1,0 +1,27 @@
+public class OrdenacionDeNumeros {
+    
+	public static void main(String[] args) {
+		int[] array = {1,4,2,10,15,18,3,4,20};
+
+       boolean hayCambios = false;
+
+       int auxiliar = 0;
+
+       do{
+           hayCambios = false;
+         for(int i = 0 ; i<array.length-1; i++){
+             if(array[i+1] < array[i]){
+                 auxiliar = array[i];
+                 array[i] = array[i+1];
+                 array[i+1] = auxiliar;
+                 hayCambios=true;
+             }
+         }  
+
+       }while(hayCambios);
+
+       for(int i = 0 ; i < array.length; i++) {
+            System.out.print(array[i]+ " \n ");
+       }
+	}
+}
